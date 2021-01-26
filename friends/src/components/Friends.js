@@ -87,18 +87,21 @@ class Friends extends React.Component {
                     <input
                         type="text"
                         name="name"
+                        placeholder='Name'
                         value={this.state.newFriend.name}
                         onChange={this.handleChange}
                     />
                     <input
-                        type="text"
+                        type="number" 
                         name="age"
+                        placeholder='Age'
                         value={this.state.newFriend.age}
                         onChange={this.handleChange}
                     />
                     <input
-                        type="text"
+                        type="email"
                         name="email"
+                        placeholder='Email'
                         value={this.state.newFriend.email}
                         onChange={this.handleChange}
                     />
