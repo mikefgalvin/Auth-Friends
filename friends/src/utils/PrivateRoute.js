@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Redirect } from 'react-router-dom';
+import { Route } from 'react-router-dom'; //can use Redirect as well
 
 // 1. Wrap a plain route component and pass in the same props.
 // 2. Check to see if we are logged in, and if so, render component 
@@ -20,8 +20,7 @@ const PrivateRoute = ({component: Component, ...rest}) => {
                 return(
                     <div>
                         <h1>Log in to view this page</h1>
-                       <button onClick={redirect}> Click here to log in</button> 
-                       {/* <Redirect to='/login' /> */}
+                       <button onClick={redirect}> Click here to log in</button>
                     </div>
                 )
             }
